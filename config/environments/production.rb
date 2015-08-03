@@ -93,4 +93,7 @@ Rails.application.configure do
   config.after_initialize do
     ActiveMerchant::Billing::Base.integration_mode = :development # 取得正式 key 以後再改成 :production
   end
+
+  # splite assets
+  # config.action_controller.asset_host = "http://assets%d.artstore.com"
 end
